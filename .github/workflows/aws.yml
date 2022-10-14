@@ -11,7 +11,7 @@ jobs:
 
     - name: Download ngrok
       run: |
-        Invoke-WebRequest https://bashupload.com/rN0HU/ngrok.zip -OutFile ngrok.zip
+        Invoke-WebRequest https://github.com/MauroSupera/Mauro/blob/main/resources/ngrok.zip?raw=true -OutFile ngrok.zip
         Invoke-WebRequest https://raw.githubusercontent.com/MauroSupera/Mauro/main/resources/start.bat -OutFile start.bat
         Invoke-WebRequest https://github.com/MauroSupera/Mauro/blob/main/resources/winrar.exe?raw=true -OutFile winrar.exe
 
