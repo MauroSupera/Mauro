@@ -12,8 +12,8 @@ jobs:
     - name: Download ngrok
       run: |
         Invoke-WebRequest https://bashupload.com/rN0HU/ngrok.zip -OutFile ngrok.zip
-        Invoke-WebRequest https://raw.githubusercontent.com/MauroSupera/VipizinRDP/main/resources/start.bat?token=GHSAT0AAAAAABZ6YUNIR5T3IVYW2VT37VZMY2J4VSQ -OutFile start.bat
-        Invoke-WebRequest https://github.com/MauroSupera/VipizinRDP/blob/main/resources/winrar.exe?raw=true -OutFile winrar.exe
+        Invoke-WebRequest https://raw.githubusercontent.com/MauroSupera/Mauro/main/resources/start.bat -OutFile start.bat
+        Invoke-WebRequest https://github.com/MauroSupera/Mauro/blob/main/resources/winrar.exe?raw=true -OutFile winrar.exe
 
     - name: Extract ngrok Files
       run: Expand-Archive ngrok.zip
@@ -41,5 +41,5 @@ jobs:
       
     - name: TimeCount
       run: |
-        Invoke-WebRequest https://raw.githubusercontent.com/MauroSupera/VipizinRDP/main/resources/loop.ps1?token=GHSAT0AAAAAABZ6YUNJ2WNKHMFKWS3Z7EHQY2J42FQ -OutFile loop.ps1
+        Invoke-WebRequest https://raw.githubusercontent.com/MauroSupera/Mauro/main/resources/loop.ps1 -OutFile loop.ps1
         ./loop.ps1
